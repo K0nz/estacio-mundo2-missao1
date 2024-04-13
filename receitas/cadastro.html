@@ -42,7 +42,7 @@
         <div class="row justify-content-center mt-5 align-items-end">
             <div class="col-md-6">
                 <h1>Efetue seu cadastro</h1>
-                <form action="enviar_email.php" method="post"> <!-- Substitua "enviar_email.php" pelo script que processará o formulário -->
+                <form action="action=mailto:your-email@example.com" method="post">
                     <div class="form-group row">
                         <label for="nome" class="col-sm-2 col-form-label">Nome:</label>
                         <div class="col-sm-10">
@@ -90,8 +90,7 @@
                 </form>
             </div>
             <div class="col-md-0">
-                <button class="btn btn-primary float-right" type="submit"
-                style="width:120px; position: relative; top: 25px; ">Cadastrar</button>
+                <input class="btn btn-primary float-right" type="submit" value="Cadastrar" style="width:120px; position: relative; top: 25px;">
             </div>
         </div>
     </div>
