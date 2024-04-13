@@ -1,0 +1,71 @@
+/* Acrescentar overflow-y automático para a área principal */
+body {
+    overflow-y: auto;
+}
+
+/* Dimensões das áreas */
+header {
+    height: 60px;
+}
+
+main {
+    height: calc(100vh - 100px);
+}
+
+footer {
+    height: 25px;
+}
+
+/* Alterar a área de exibição do navegador */
+.container {
+    height: 100%;
+}
+
+/* Definir uma classe para a logotipo */
+.logotipo {
+    width: 50px;
+    height: 50px;
+}
+
+/* Formatação das áreas semânticas */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+section {
+    margin: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+/* Características tipográficas globais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Visualização no modo flex */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Posicionamento adequado das áreas semânticas */
+nav, footer {
+    flex-shrink: 0;
+}

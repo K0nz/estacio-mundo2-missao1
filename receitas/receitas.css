@@ -1,0 +1,44 @@
+/* Área para agrupar os painéis das receitas */
+#painel-receitas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaçamento entre os painéis */
+    justify-content: center; /* Centralizar os painéis horizontalmente */
+}
+
+/* Formatação dos painéis de receitas */
+.receita {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px; /* Largura fixa para os painéis */
+}
+
+/* Formatação para o nome da receita */
+.receita h2 {
+    margin-top: 0;
+}
+
+/* Formatação para a foto do prato */
+.receita img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Formatação para a lista de itens */
+.receita ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Formatação para o modo de preparo */
+.receita p {
+    margin-top: 10px;
+}
+
+/* Barra de rolagem vertical */
+body {
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical automaticamente quando necessário */
+}
