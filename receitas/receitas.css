@@ -7,38 +7,40 @@
 }
 
 /* Formatação dos painéis de receitas */
-.receita {
+.card-body {
     background-color: #f9f9f9;
-    border: 1px solid #ddd;
     border-radius: 5px;
-    padding: 20px;
-    width: 300px; /* Largura fixa para os painéis */
-}
-
-/* Formatação para o nome da receita */
-.receita h2 {
-    margin-top: 0;
+    padding: 20px; /* Add padding */
+    height: calc(100% - 40px); /* Adjust height */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange content vertically */
 }
 
 /* Formatação para a foto do prato */
-.receita img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
+.card-body img {
+    width: auto;
+    height: 300px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* Formatação para o nome da receita */
+.card-body h5 {
+    margin-top: 10px; /* Adjust margin */
+    font-size: 18px; /* Increase font size */
+    font-weight: bold;
+    text-align: center;
 }
 
 /* Formatação para a lista de itens */
-.receita ul {
-    list-style-type: none;
-    padding: 0;
+.card-body hr {
+    border: none; /* Remove default border */
+    border-top: 1px solid #ccc; /* Add horizontal line */
+    margin: 10px 0; /* Adjust margin */
 }
 
 /* Formatação para o modo de preparo */
-.receita p {
-    margin-top: 10px;
-}
-
-/* Barra de rolagem vertical */
-body {
-    overflow-y: auto; /* Adiciona uma barra de rolagem vertical automaticamente quando necessário */
+.card-body p {
+    font-size: 14px; /* Adjust font size */
+    text-align: justify; /* Justify text */
 }

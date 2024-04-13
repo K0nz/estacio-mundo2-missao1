@@ -10,25 +10,25 @@
         }
     </style>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="formatos.css">
 </head>
 <body>
     <!-- Área do menu -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="#">Meu Site</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="home.html">Página Inicial</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="receitas.html">Receitas</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="cadastro.html">Cadastro</a>
                         </li>
                     </ul>
@@ -39,48 +39,58 @@
 
     <!-- Área principal -->
     <div class="container-fluid">
-        <div class="row justify-content-center mt-5">
+        <div class="row justify-content-center mt-5 align-items-end">
             <div class="col-md-6">
-                <h1>Cadastro</h1>
+                <h1>Efetue seu cadastro</h1>
                 <form action="enviar_email.php" method="post"> <!-- Substitua "enviar_email.php" pelo script que processará o formulário -->
-                    <div class="form-group">
-                        <label for="nome">Nome:</label>
-                        <input type="text" class="form-control" id="nome" name="nome" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">E-mail:</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="rua">Rua:</label>
-                            <input type="text" class="form-control" id="rua" name="rua" required>
-                        </div>
-                        <div class="form-group col-md-2">
-                            <label for="numero">Número:</label>
-                            <input type="text" class="form-control" id="numero" name="numero" required>
-                        </div>
-                        <div class="form-group col-md-4">
-                            <label for="complemento">Complemento:</label>
-                            <input type="text" class="form-control" id="complemento" name="complemento">
+                    <div class="form-group row">
+                        <label for="nome" class="col-sm-2 col-form-label">Nome:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="nome" name="nome" required>
                         </div>
                     </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="cidade">Cidade:</label>
-                            <input type="text" class="form-control" id="cidade" name="cidade" required>
+                    <div class="form-group row">
+                        <label for="email" class="col-sm-2 col-form-label">E-mail:</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="email" name="email" required>
                         </div>
-                        <div class="form-group col-md-4">
-                            <label for="estado">Estado:</label>
-                            <input type="text" class="form-control" id="estado" name="estado" required>
-                        </div>
-                        <div class="form-group col-md-2">
-                            <label for="cep">CEP:</label>
+                    </div>
+                    <div class="form-group row">
+                        <label for="cep" class="col-sm-2 col-form-label">CEP:</label>
+                        <div class="col-sm-10">
                             <input type="text" class="form-control" id="cep" name="cep" required>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <div class="form-group row">
+                        <label for="rua" class="col-sm-2 col-form-label">Rua:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="rua" name="rua" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="numero" class="col-sm-2 col-form-label">Número:</label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" id="numero" name="numero" required>
+                        </div>
+                        <label for="complemento" class="col-sm-2 col-form-label">Complemento:</label>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" id="complemento" name="complemento">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="cidade" class="col-sm-2 col-form-label">Cidade:</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="cidade" name="cidade" required>
+                        </div>
+                        <label for="uf" class="col-sm-1 col-form-label">UF:</label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" id="uf" name="uf" required>
+                        </div>
+                    </div>
                 </form>
+            </div>
+            <div class="col-md-0">
+                <button type="submit" class="btn btn-primary float-right">Cadastrar</button>
             </div>
         </div>
     </div>
@@ -88,7 +98,7 @@
     <!-- Rodapé -->
     <footer class="mt-5">
         <div class="container">
-            <p class="text-center">&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+            <p class="text-center">&copy; Jurema 2024</p>
         </div>
     </footer>
 
