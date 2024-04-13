@@ -6,12 +6,15 @@
     justify-content: center; /* Centralizar os painéis horizontalmente */
 }
 
+.card {
+    height: 100%;
+}
+
 /* Formatação dos painéis de receitas */
 .card-body {
     background-color: #f9f9f9;
-    border-radius: 5px;
-    padding: 20px; /* Add padding */
-    height: calc(100% - 40px); /* Adjust height */
+    border-radius: 10px;
+    height: 100%;
     display: flex; /* Use flexbox */
     flex-direction: column; /* Arrange content vertically */
 }
@@ -20,8 +23,6 @@
 .card-body img {
     width: auto;
     height: 300px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
 }
 
 /* Formatação para o nome da receita */
@@ -29,18 +30,16 @@
     margin-top: 10px; /* Adjust margin */
     font-size: 18px; /* Increase font size */
     font-weight: bold;
-    text-align: center;
 }
 
 /* Formatação para a lista de itens */
 .card-body hr {
-    border: none; /* Remove default border */
     border-top: 1px solid #ccc; /* Add horizontal line */
-    margin: 30x 0; /* Adjust margin */
+    margin: 10px 0; /* Adjust margin */
 }
 
 /* Formatação para o modo de preparo */
-.card-body p {
+.card-text {
     font-size: 14px; /* Adjust font size */
     text-align: justify; /* Justify text */
 }
